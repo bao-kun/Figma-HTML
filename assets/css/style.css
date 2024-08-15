@@ -236,6 +236,7 @@ a {
 }
 .popular-top {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .popular-top .desc {
@@ -245,6 +246,10 @@ a {
   font-size: 1.8rem;
   line-height: 1.67;
 }
+.popular-top .control {
+  display: flex;
+  gap: 18px;
+}
 .popular-top .control-btn {
   display: flex;
   justify-content: center;
@@ -253,5 +258,11 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+.popular-top .control-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
 }
